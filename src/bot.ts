@@ -1,20 +1,18 @@
 import 'dotenv/config';
 import weather from './functions/weather.js';
+
 import { Bot, session, Context } from "grammy";
 import {
-  type Conversation,
   type ConversationFlavor,
   conversations,
   createConversation,
 } from "@grammyjs/conversations";
 
 type MyContext = Context & ConversationFlavor;
-
 const bot = new Bot<MyContext>(process.env.BOT_TOKEN);
 
 bot.use(session({ initial: () => ({}) }));
 bot.use(conversations());
-
 bot.use(createConversation(weather));
 
 bot.command("start", async (ctx) => {

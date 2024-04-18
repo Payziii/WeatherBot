@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
       "moduleResolution":"node",
-      "target": "es2016", // Измените на "ES2015", чтобы скомпилировать в ES6
-      "rootDir": "./src", // Откуда компилировать
-      "outDir": "./public", // Куда компилировать (обычно папка, которая разворачивается на сервере)
-      "allowJs": true, // Позволяет компилировать JS-файлы
-      "checkJs": true, // Проверяет типы в JavaScript-файлах и сообщает об ошибках
-      "sourceMap": true, // Создать source map файлы для готовых файлов JavaScript (хороошо подходит для дебаггинга)
-      "removeComments": true, // Игнорировать комментарии
+      "target": "es2016", 
+      "rootDir": "./src", 
+      "outDir": "./build", 
+      "allowJs": true, 
+      "checkJs": true, 
+      "sourceMap": true, 
+      "removeComments": true, 
   },
 
-  "include": ["src"] // Компилировать только файлы из папки src
+  "include": ["src"] 
 }
