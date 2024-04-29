@@ -1,21 +1,24 @@
 {
   "name": "weatherbot",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Telegram bot for checking a weather & my first bot on typescript :)",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "build": "tsc",
+    "start": "npm run build && node build/bot.js"
   },
   "keywords": [
     "telegram",
     "tests"
   ],
+  "type": "module",
   "author": "Payziii",
   "license": "MIT",
   "dependencies": {
     "@grammyjs/conversations": "^1.2.0",
     "dotenv": "^16.4.5",
-    "grammy": "^1.22.4"
+    "grammy": "^1.22.4",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",

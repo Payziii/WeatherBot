@@ -1,4 +1,4 @@
-const key = process.env.WEATHER;
+const key = process.env.WEATHER_KEY;
 
 export default async function getWeather(city: string) {
     const url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${encodeURIComponent(city)}`;
