@@ -4,10 +4,7 @@ export default async function getWeather(city: string) {
     const url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${encodeURIComponent(city)}`;
 
     const response = await fetch(url, {
-        method: 'GET',
-        headers: {
-            "Content-Type": "application/json",
-        },
+        method: 'GET'
     });
 
     const data = await response.json();
