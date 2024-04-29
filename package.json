@@ -2,14 +2,13 @@
   "name": "weatherbot",
   "version": "1.0.0",
   "description": "Telegram bot for checking a weather & my first bot on typescript :)",
-  "main": "bot.js",
+  "main": "build/bot.js",
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node build/bot.js"
   },
   "keywords": [
-    "telegram",
-    "tests"
+    "telegram"
   ],
   "type": "module",
   "author": "Payziii",
