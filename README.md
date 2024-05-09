@@ -14,4 +14,5 @@
 ## My other projects
 
 - PayziBot: https://github.com/Payziii/PayziBot [Discord bot]
+- PayziBotTelegram: https://github.com/Payziii/PayziBotTelegram [Telegram bot]
 - CheckSpellingBot: https://github.com/Payziii/CheckSpellingBot [Telegram bot]
