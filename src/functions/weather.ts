@@ -13,9 +13,9 @@ type MyConversation = Conversation<MyContext>;
 // Creating a fucntion to view the weather
 export default async function weather(conversation: MyConversation, ctx: MyContext) {
   await ctx.reply("Enter a city name:");
-  const answer = await conversation.wait();
+  const answer = await conversation.waitFrom(ctx.from);
   const city = answer.message.text;
-  const data = await getWeather(city);
+  const data = await conversation.external(() => getWeather(city));
 
   if(data.error) {
     if (data.error.code == 1006) return ctx.reply("The city not found!");

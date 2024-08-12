@@ -1,6 +1,6 @@
 {
   "name": "weatherbot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Telegram bot for checking a weather & my first bot on typescript :)",
   "main": "build/bot.js",
   "scripts": {
